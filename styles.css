@@ -48,7 +48,9 @@ nav a:hover {
 }
 
 /* ----------- Hamburger ----------- */
-#menu-toggle { display: none; }
+#menu-toggle { 
+  display: none; 
+}
 
 .menu-icon {
   display: none;
@@ -58,9 +60,19 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-  nav { display: none; flex-direction: column; text-align: center; width: 100%; background: var(--light-rose); }
-  #menu-toggle:checked + .menu-icon + nav { display: flex; }
-  .menu-icon { display: block; }
+  nav { 
+    display: none; 
+    flex-direction: column; 
+    text-align: center; 
+    width: 100%; 
+    background: var(--light-rose); 
+  }
+  #menu-toggle:checked + .menu-icon + nav { 
+    display: flex; 
+  }
+  .menu-icon { 
+    display: block; 
+  }
 }
 
 /* ----------- Hero & Catalog ----------- */
