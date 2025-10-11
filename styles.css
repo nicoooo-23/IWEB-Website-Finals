@@ -115,7 +115,7 @@ nav a:hover {
 }
 
 .about-box {
-  background: var(--light-rose);
+  background: var(--soft-rose);
   border-radius: 40px;
   padding: 40px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
@@ -133,8 +133,6 @@ nav a:hover {
 
 .about-content img {
   width: 280px;
-  border-radius: 20px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 .about-text {
