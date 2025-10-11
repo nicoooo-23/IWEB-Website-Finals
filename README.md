@@ -61,9 +61,10 @@ The website emphasizes **clean layout, pastel design aesthetics, and responsive 
 ---
 
 ## Contact
-For inquiries or collaborations, feel free to reach out through our group repository or individual GitHub profiles.
+For inquiries, feel free to reach out through our group repository or individual GitHub profiles.
 
 ---
 
 ### © 2025 2000s Filmography | Guanlao, Nengasca, Rivera
+
 
