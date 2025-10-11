@@ -29,7 +29,7 @@ The website emphasizes **clean layout, pastel design aesthetics, and responsive 
 | Page | Description |
 |------|--------------|
 | **About Page** | Introduces the purpose of the website and the creative team. |
-| **Recommendations Page** | Lists 2000s movies with short blurbs and visual previews. |
+| **Recommendations Page** | Lists 2000s movies with titles, year of release, and visual previews. |
 | **Trailers Page** | View trailers for the recommended movies. |
 
 ---
