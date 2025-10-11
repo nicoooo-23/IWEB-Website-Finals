@@ -185,8 +185,14 @@ nav a:hover {
   text-align: center;
 }
 
-.movie:hover { transform: scale(1.05); }
-.movie img { width: 100%; border-radius: 8px; }
+.movie:hover { 
+  transform: scale(1.05); 
+}
+.movie img { 
+  max-width: 150px;
+  width: 100%; 
+  border-radius: 8px; 
+}
 
 
 /* ----------- Trailers ----------- */
