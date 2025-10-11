@@ -239,9 +239,8 @@ footer {
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     position: absolute;
-    top: 60px; /* just below header */
+    top: 60px; 
     left: 0;
     width: 100%;
     background: var(--light-rose);
