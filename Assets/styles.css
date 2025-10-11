@@ -110,27 +110,59 @@ nav a:hover {
 
 /* ----------- About Section ----------- */
 .about {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  gap: 30px;
+  text-align: center;
+  padding: 60px 20px;
 }
 
-.about img {
-  max-width: 300px;
+.about-box {
+  background: var(--light-rose);
+  border-radius: 40px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-content img {
+  width: 280px;
   border-radius: 20px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 .about-text {
+  text-align: left;
   max-width: 500px;
 }
 
 .about-text h2 {
   font-family: 'Hepta Slab', serif;
   color: var(--deep-pink);
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.catalog-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.catalog-link p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 .btn {
@@ -138,16 +170,36 @@ nav a:hover {
   background: var(--rose);
   color: white;
   text-decoration: none;
-  padding: 10px 25px;
-  border-radius: 25px;
-  margin-top: 15px;
+  padding: 14px 40px;
+  border-radius: 30px;
+  margin-top: 10px;
   font-family: 'Hepta Slab', serif;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 1.1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
 }
 
-.btn:hover { 
-  background: var(--deep-pink); 
+.btn:hover {
+  background: var(--deep-pink);
+  transform: translateY(-2px);
 }
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content img {
+    width: 220px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
+
 
 /* ----------- Trailers ----------- */
 .trailer-section {
