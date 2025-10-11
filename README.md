@@ -11,9 +11,9 @@ This website was created as part of our **Final Output: Website Presentation** f
 ---
 
 ## Group Members
-- **Rivera, Ella Nicole** – Project Lead / Home Page  
-- **Guanlao, Kenneth** – About Page / Styling  
-- **Nengasca, Renzo** – Recommendations Page / Assets Management  
+- **Rivera, Ella Nicole** – Project Lead / Initial Layout / Assets Management
+- **Guanlao, Kenneth** – About Page / Recommendations Page 
+- **Nengasca, Renzo** – Trailers Page / Styling  
 
 ---
 
@@ -28,9 +28,9 @@ The website emphasizes **clean layout, pastel design aesthetics, and responsive 
 ## Pages
 | Page | Description |
 |------|--------------|
-| **Home Page** | Displays a featured film banner and top movie recommendations. |
 | **About Page** | Introduces the purpose of the website and the creative team. |
 | **Recommendations Page** | Lists 2000s movies with short blurbs and visual previews. |
+| **Trailers Page** | View trailers for the recommended movies. |
 
 ---
 
@@ -66,3 +66,4 @@ For inquiries or collaborations, feel free to reach out through our group reposi
 ---
 
 ### © 2025 2000s Filmography | Guanlao, Nengasca, Rivera
+
