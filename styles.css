@@ -195,7 +195,6 @@ nav a:hover {
   border-radius: 8px; 
 }
 
-
 /* ----------- Trailers ----------- */
 .trailer-section {
   text-align: center;
@@ -241,35 +240,139 @@ footer {
 
 
 /* ----------- Media Queries ----------- */
+/* Mobile */
 @media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
+  header {
+    flex-wrap: wrap;
     text-align: center;
   }
 
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background: var(--light-rose);
+    padding: 10px 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav {
+    display: flex;
+  }
+
+  /* About section */
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .about-content img {
-    width: 220px;
+    width: 200px;
   }
 
   .about-text {
     text-align: center;
+    max-width: 90%;
   }
 
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 12px 30px;
+  }
+
+  /* Catalog grid */
   .catalog {
     grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
   }
 
+  .movie img {
+    max-width: 180px;
+  }
+
+  /* Gallery grid */
   .gallery {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  video {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
-@media (max-width: 1024px) {
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+    margin: 0 8px;
+  }
+
+  .about {
+    padding: 50px 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about-content img {
+    width: 240px;
+  }
+
+  .about-text {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
   .catalog {
     grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
 
   .gallery {
     grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  video {
+    width: 95%;
   }
 }
