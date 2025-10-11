@@ -47,32 +47,12 @@ nav a:hover {
   color: var(--deep-pink);
 }
 
-/* ----------- Hamburger ----------- */
-#menu-toggle { 
-  display: none; 
-}
-
+/* ----------- Hamburger Menu ----------- */
 .menu-icon {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
   color: var(--deep-pink);
-}
-
-@media (max-width: 768px) {
-  nav { 
-    display: none; 
-    flex-direction: column; 
-    text-align: center; 
-    width: 100%; 
-    background: var(--light-rose); 
-  }
-  #menu-toggle:checked + .menu-icon + nav { 
-    display: flex; 
-  }
-  .menu-icon { 
-    display: block; 
-  }
 }
 
 /* ----------- About Section ----------- */
@@ -253,23 +233,20 @@ footer {
     width: 100%;
   }
 
-  .menu-icon {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-  }
-
   nav {
     display: none;
     flex-direction: column;
     text-align: center;
     width: 100%;
     background: var(--light-rose);
-    padding: 10px 0;
+    padding: 15px 0;
   }
 
-  #menu-toggle:checked + .menu-icon + nav {
+  .menu-icon {
+    display: block;
+  }
+
+  nav.active {
     display: flex;
   }
 
