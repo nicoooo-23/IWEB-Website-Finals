@@ -75,39 +75,6 @@ nav a:hover {
   }
 }
 
-/* ----------- Hero & Catalog ----------- */
-.hero {
-  text-align: center;
-  background: var(--soft-rose);
-  padding: 20px;
-}
-
-.hero img {
-  max-width: 600px;
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-}
-
-.catalog {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.movie {
-  background: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform .3s ease;
-  text-align: center;
-}
-
-.movie:hover { transform: scale(1.05); }
-.movie img { width: 100%; border-radius: 8px; }
-
 /* ----------- About Section ----------- */
 .about {
   text-align: center;
@@ -182,21 +149,38 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* Responsive layout */
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-content img {
-    width: 220px;
-  }
-
-  .about-text {
-    text-align: center;
-  }
+/* ----------- Hero & Catalog ----------- */
+.hero {
+  text-align: center;
+  background: var(--soft-rose);
+  padding: 20px;
 }
+
+.hero img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform .3s ease;
+  text-align: center;
+}
+
+.movie:hover { transform: scale(1.05); }
+.movie img { width: 100%; border-radius: 8px; }
 
 
 /* ----------- Trailers ----------- */
@@ -240,4 +224,25 @@ footer {
   padding: 15px;
   font-family: 'Itim', sans-serif;
   font-size: .9rem;
+}
+
+
+/* ----------- Media Queries ----------- */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content img {
+    width: 220px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .catalog {
+    grid-template-columns: 1fr;
+  }
 }
