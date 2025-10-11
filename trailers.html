@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trailers – 2000s Filmography</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/Assets/styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -25,19 +25,26 @@
   <main>
     <section class="trailer-section">
       <h2>You’re Now Watching: The Princess Diaries (2001)</h2>
-      <video controls poster="images/princessdiaries.jpg">
-        <source src="trailers/princessdiaries.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <div class="video-container">
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/CzcGwB7qat8" 
+          title="The Princess Diaries (2001) Trailer"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
     </section>
 
     <section class="more-trailers">
       <h3>More Movies Like This 💋</h3>
       <div class="gallery">
-        <img src="images/meangirls.jpg" alt="Mean Girls">
-        <img src="images/legallyblonde.jpg" alt="Legally Blonde">
-        <img src="images/wildchild.jpg" alt="Wild Child">
-        <img src="images/13goingon30.jpg" alt="13 Going on 30">
+        <img src="/Assets/Images/meangirls.png" alt="Mean Girls">
+        <img src="/Assets/Images/legallyblonde.jpg" alt="Legally Blonde">
+        <img src="/Assets/Images/WildChild.jpg" alt="Wild Child">
+        <img src="/Assets/Images/13going30.png" alt="13 Going on 30">
       </div>
     </section>
   </main>
